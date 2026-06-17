@@ -418,14 +418,42 @@
         }
     </style>
 
-    <!-- ✅ AQUÍ CARGÁS TU STOCK DE MÁQUINAS - ESTO ES LO ÚNICO QUE EDITÁS, NADIE LO VE -->
-    <script>
-        const STOCK = 4
-            plotters: [
-                    nombre: "Plotter de Corte 72cm Modelo X1", descripcion: "Corte preciso para vinilo y adhesivos, con software incluido", cantidad: 4
-            sublimadoras: 
-            telas: 
-            insumos: 
+    <!-- ✅ AQUÍ CARGÁS TU STOCK CON IMÁGENES - SOLO EDITÁ ESTO -->
+<script>
+const STOCK = {
+    plotters: 
+            foto: "mi-plotter.jpg",  // NOMBRE DE TU ARCHIVO DE IMAGEN
+            nombre: "HP Latex R530", 
+            descripcion: "Corte preciso para vinilo y adhesivos, con software incluido", 
+            cantidad: 3  // ← PONÉ LA CANTIDAD QUE TENGAS, APARECERÁ SOLO ESTE
+        }
+        // ➕ SI QUERÉS AGREGAR OTRO, COPIÁ LO DE ARRIBA Y PEGÁ ABAJO
+    ],
+    sublimadoras: [
+        { 
+            foto: "sublimadora-38x38.jpg", 
+            nombre: "Sublimadora Plana 38x38", 
+            descripcion: "Alta presión, uso comercial", 
+            cantidad: 10 
+        }
+    ],
+    telas: [
+        { 
+            foto: "tela-poliester.jpg", 
+            nombre: "Tela Poliéster 100% Ancho 1.50", 
+            descripcion: "Rollo de 50 metros, calidad premium", 
+            cantidad: 35 
+        }
+    ],
+    insumos: [
+        { 
+            foto: "tinta-ecosolvente.jpg", 
+            nombre: "Tinta Eco Solvente 1L", 
+            descripcion: "Colores CMYK, original", 
+            cantidad: 60 
+    ]
+};
+</script>
         };
     </script>
 </head>
